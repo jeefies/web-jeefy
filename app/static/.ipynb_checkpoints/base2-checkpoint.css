@@ -1,0 +1,180 @@
+.profile-thumbnail {
+    position: absolute;
+}
+.profile-header {
+    min-height: 260px;
+    margin-left: 280px;
+}
+ul.posts {
+    list-style-type: none;
+    padding: 0px;
+    margin: 16px 0px 0px 0px;
+    border-top: 1px solid #e0e0e0;
+}
+ul.posts li.post {
+    padding: 8px;
+    border-bottom: 1px solid #e0e0e0;
+}
+ul.posts li.post:hover {
+    background-color: #f0f0f0;
+}
+div.post-date {
+    float: right;
+}
+div.post-author {
+    font-weight: bold;
+    font-size: 2em;
+}
+div.post-thumbnail {
+    position: absolute;
+}
+div.post-content {
+    margin-left: 48px;
+    min-height: 48px;
+}
+p.post-context	{
+	font-size:1.3em;
+}
+a.post-author {
+    font-size: 1.5em
+}
+
+
+
+
+a.home	{
+	color: rgb(255,255,255);
+	text-align: center;
+	text-decoration: none;
+	font-size: 3.75em;
+	width: 3em;
+	display: inline-block
+}
+
+a.title	{
+	color: rgb(255,255,255);
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	font-size: 3.5em;
+	width: 3em;
+	display:inline-block;
+	}
+a.download {
+	color: rgb(255,255,255);
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	font-size: 3.5em;
+	width: 4.5em;
+	display:inline-block
+}
+
+a.log	{
+	color: rgb(150,200,255);
+	text-align: right;
+	text-decoration: none;
+	font-size: 2.5em;
+	display: inline-block;
+	border: 2px solid rgb(100,150,200);
+	top: 10px;
+	right: 1em;
+	position: absolute
+}
+
+div.navbar {
+	background: rgb(0,20,200);
+	display: inline-block;
+	width: 100%;
+}
+
+div.page-header	{
+	font-size: 2em;
+	width: 100%;
+	display: inline-block;
+}
+
+div.normal {
+	width=100%
+}
+a.pkg	{
+	text-align: left;
+	font-size: 1.75em;
+	display: inline-block;
+	width: 50%
+}
+a.pkg:link {color: rgb(100,100,200); text-decoration: underline}
+a.pkg:visited {text-decoration: line-through; color: rgb(0,20,200)}
+a.pkg:hover {color: rgb(50,0,200); text-decoration: none}
+a.pkg:active {color: rgb(0,200,255); text-decoration: blink}
+a.dir	{
+	text-align: left;
+	font-size:1.7em;
+	display: block
+}
+a.dir:link	{color: rgb(100,100,200); text-decoration: underline}
+a.dir:visited	{color: rgb(20,50,200); text-decoration: line-through}
+a.dir:hover	{color: rgb(50,0,255); text-decoration: none}
+a.dir:active	{color: rgb(0,50,75); text-decoration: blink}
+
+ul.nodec
+	{
+	list-style-type: none;
+	font-size: 2em;
+	}
+
+h1.greeting	{
+	font-size: 2.25em;
+	color: rgb(0,10,150);
+	height: 3em
+}
+
+p.time	{
+	font-size: 20px;
+	color: rgb(200,200,200)
+}
+
+li.nodec	{
+	list-style-type: none
+}
+
+ul.circle`{
+	list-style-type: circle;
+	font-size: 2em
+}
+ul.sizetwo	{ font-size: 2em}
+
+a.including	{
+	font-size: 25px;
+	display: inline;
+	color: rgb(0,20,235);
+	text-decoration: underline
+}
+
+p.including	{
+	font-size: 20px;
+	display: inline;
+	color: rgb(0,0,0);
+	text-decoration: none
+}
+
+p.sayer	{
+	font-size: 2em;
+	font-weight: bold;
+	display: inline-block;
+}
+p.saytime	{
+	font-size: 16px;
+	color: rgba(200,200,200,1);
+	position: absolute;
+	right: 2em;
+	display: inline-block;
+}
+p.saying	{
+	font-size: 20px;
+	left: 1em;
+	width: 100%;
+	position: relative;
+	display: inline-block;
+}
+

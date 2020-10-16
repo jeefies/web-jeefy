@@ -1,0 +1,78 @@
+a.home	{
+	color: rgb(255,255,255);
+	text-align; center;
+	text-decoration: none;
+	font-size: 3.75em;
+	width: 3em;
+	display: inline-block
+}
+
+a.title	{
+	color: rgb(255,255,255);
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	font-size: 3.5em;
+	width: 2.8em;
+	display:inline-block;
+	}
+a.download {
+	color: rgb(255,255,255);
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	font-size: 3.5em;
+	width: 4.5em;
+	display:inline-block
+}
+div.navbar {
+	background: rgb(0,20,200);
+	display: inline-block;
+	width: 100%;
+}
+
+div.page-header	{
+	font-size: 2em;
+	width: 100%;
+	display: inline-block;
+}
+
+div.normal {
+	width=100%
+}
+a.pkg	{
+	text-align: left;
+	font-size: 1.75em;
+	display: block;
+}
+a.pkg:link {color: rgb(0,0,0); text-decoration: underline}
+a.pkg:visited {text-decoration: line-through; color: rgb(100,100,100)}
+a.pkg:hover {color: rgb(50,0,0); text-decoration: none}
+a.pkg:active {color: rgb(0,200,255); text-decoration: blink}
+
+ul.nodec
+	{
+	list-style-type: none;
+	font-size: 2em;
+	}
+
+h1.greeting	{
+	font-size: 2.25em;
+	color: rgb(0,10,150);
+	height: 3em
+}
+
+p.time	{
+	font-size: 20px;
+	color: rgb(200,200,200)
+}
+
+li.nodec	{
+	list-style-type: none
+}
+
+ul.circle`{
+	list-style-type: circle;
+	font-size: 2em
+}
+ul.sizetwo	{ font-size: 2em}

@@ -1,0 +1,70 @@
+<!DOCTYPE html >
+<html lang='en' >
+    {% block htmls %}
+   <head >
+        {% block header %}
+       <title >{% block title %}Jeef’s website{% endblock title %}</title >
+        {% block style %}
+       <link rel='shorcut icon' href="{{  url_for('static', filename='favicon.ico')  }}" type="image/x-icon" >
+       <link rel="icon" href="{{  url_for('static', filename='favicon.ico')  }}" type="image/x-icon" >
+       <link rel='stylesheet' type='text/css' href='/static/base2.css' / >
+       <link rel='stylesheet' type='text/css' href='/static/flaskboot.css' >
+        {% endblock style %}
+        {% endblock header %}
+   </head >
+   <body >
+        {% block body %}
+        {% block navbar %}
+       <div class='navbar' >
+       <a class='home' href='{{  url_for('main.index')  }}' >Jeefy</a >
+        <a class='title' href='{{  url_for('study.index')  }}' >Study</a >
+         <a class='title' href='/room' >Room</a >
+          <ul class='nav navbar-nav navbar-right' >
+                {% if not name %}
+               <li ><a class='log' href='/login' >Login</a ></li >
+                {% else %}
+               <li ><a class='log' href='/logout' >Logout</a ></li >
+                {% endif %}
+           </ul >
+       </div >
+        {% endblock navbar %}
+       <div class='container' >
+            {% block flashes %}
+            {% for ms in get_flashed_messages() %}
+           <div class="alert alert-warning" >
+           <button type='botton' class='close' data-dismiss='alert' >&times
+            </button >
+              {{ ms }}
+           </div >
+            {% endfor %}
+            {% endblock flashes %}
+       <div class="page-header" >
+        {% block page_header %}
+        {% endblock page_header%}
+       </div >
+        {% block content %}
+       <div >
+            {% for name, path in pkgs.items() %}
+               <ul class='nodec' ><a class='pkg' href='/downloading/{{  path  }}' >{{  name  }}</a ></ul>
+            {% endfor %}
+            {% for filen, fpath in dirs.items() %}
+               <ul class='nodec' ><a class='pkg' href='/download/{{  fpath  }}' >{{  filen  }}</a ></ul>
+            {% endfor %}
+       </div >
+        {% if args %}
+       <div >
+            {% for arg in args %}
+           <ul class="nodec" >{{ arg }}</ul >
+            {% endfor %}
+       </div >
+        {% endif %}
+        {% endblock content %}
+       </div >
+        {% endblock body%}
+        {% block scripts %}
+       <script src="{{  bootstrap_find_resource('jquery.js', cdn='jquery') }}" ></script >
+       <script src="{{  bootstrap_find_resource('js/bootstrap.js', cdn='bootstrap')  }}" ></script >
+        {% endblock scripts %}
+   </body >
+{% endblock htmls %}
+</html >

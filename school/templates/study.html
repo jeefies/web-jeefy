@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Jeefy - study{%endblock%}
+
+{% block content %}
+<div>
+	<ul class='nodec'><a class="pkg" href="{{ upperpath }}">../</a>
+	{% for name,path in pkgs.items() %}
+	<ul class="nodec"><a class="pkg" href="{{ path }}">{{ name }}</a></ul>
+	{% endfor %}
+	{% for name,path in dirs.items() %}
+	<ul><a class="pkg" href="{{ path }}">{{ name }}</a></ul>
+	{% endfor %}
+</div>
+{% endblock %}

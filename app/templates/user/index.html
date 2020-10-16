@@ -1,0 +1,28 @@
+{% extends 'user/base.html' %}
+
+{% block title %}Jeefy - account{% endblock %}
+
+{#
+{% block page_header%}
+<h2>{{ user[0] }}</h2>
+{% endblock %}
+#}
+
+{% block content %}
+<div>
+	<img class="img-rounded profile-thumbnail" src="{{ img }}">
+	<div class='profile-header'>
+		<h1>{{ acc[0] }}</h1>
+		<p>Full Name: {{ acc[1][3] }}</p>
+		<p>Mail: {{ acc[1][2] }}</p>
+		<p>Discription:</p>
+		{% for dis in disc %}
+		<p>	{{dis}}</p>
+		{% endfor %}
+		{% if self %}
+		<p>Permission: {{ acc[1][1] }}</p>
+		<a class='btn btn-default' href='{{ url_for('user.edit_profile', username=acc[0]) }}'>Edit</a>
+		{% endif %}
+	</div>
+</div>
+{% endblock %}

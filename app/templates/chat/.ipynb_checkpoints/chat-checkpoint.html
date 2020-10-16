@@ -1,0 +1,28 @@
+{% extends 'chat/chatbase.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title%}Chat - room{% endblock %}
+
+{% block page_header %}
+<h1>Room</h1>
+{{  wtf.quick_form(form)  }}
+{% endblock %}
+
+{% block content %}
+<div>
+	<ul class='posts'>
+		{% for con in cons%}
+		<li class='post'>
+			<div>
+			<p class='sayer'>{{  con[0]  }}</p>
+			<p class='saytime'>{{ con[2] }}</p>
+			{% for line in con[1].split('\n') %}
+			<p class='saying'>{{  line  }}</p>
+			{% endfor %}
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+{% endblock %}
+

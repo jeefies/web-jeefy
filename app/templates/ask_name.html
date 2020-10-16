@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title%}Jeefy - Login{% endblock %}
+
+{% block page_header %}
+<h1 >Please enter your info</h1>
+{% endblock %}
+
+{% block content %}
+{{ wtf.quick_form(form) }}
+<div>
+	<p>If you don't have any registed user, click<a href="{{  url_for('main.registor') }}"> Here </a>to regist</p>
+</div>
+<div>
+<p class="time" >The date is {{ tm['year'] }}.{{ tm['mon'] }}.{{ tm['day'] }} today.</p>
+<p class="time" >It seems that it's {{  tm['wday'] }} now.</p>
+<p class='time' >But When your log in , it was {{ tm['hour']  }}: {{ tm['min']  }}: {{ tm['sec'] }}</p>
+</div >
+{% endblock %}

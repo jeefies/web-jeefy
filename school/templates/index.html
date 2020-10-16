@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Jeefy{% endblock %}
+
+{% block content %}
+<div>
+	<p class="time">Today is {{ year }}.{{ month }}.{{ day }}</p>
+	<p class="time">It's {{ wday }} today</p>
+	<p class="time">When you were in, it was {{ hour }}:{{ mi }}:{{ sec }}</p>
+</div>
+{% endblock %}
+
+{% block page_header %}
+<h1 class="greeting">Welcome to jeef's website - Jeefy</h1>
+{% endblock %}

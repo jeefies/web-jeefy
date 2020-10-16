@@ -1,0 +1,15 @@
+{% extends 'chat/chatbase.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title%}Room - del{% endblock %}
+
+{% block page_header %}
+<h1 >Del one Room</h1 >
+{% endblock %}
+
+{% block content %}
+{% for room in rooms %}
+<p >{{ room }}</p >
+{% endfor %}
+{{ wtf.quick_form(form) }}
+{% endblock %}  
