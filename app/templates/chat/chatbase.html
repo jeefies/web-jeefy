@@ -8,7 +8,7 @@
        		<link rel='shorcut icon' href="{{  url_for('static', filename='favicon.ico')  }}" type="image/x-icon" >
        		<link rel="icon" href="{{  url_for('static', filename='favicon.ico')  }}" type="image/x-icon" >
        		<link rel='stylesheet' type='text/css' href='/static/base2.css' / >
-       		<link rel='stylesheet' type='text/css' href='/static/flaskboot.css' / >
+		<link rel='stylesheet' href="{{bootstrap_find_resource('css/bootstrap.css', cdn='bootstrap')}}">
         	{% endblock style %}
         	{% endblock header %}
 	</head >

@@ -3,12 +3,12 @@
     {% block htmls %}
    <head>
         {% block header %}
-       <title>{% block title %}Jeef’s website{% endblock title %}</title>
+       	<title>{% block title %}Jeef’s website{% endblock title %}</title>
         {% block style %}
-       <link rel='shorcut icon' href="{{  url_for('static', filename='favicon.ico')  }}" type="image/x-icon" >
-       <link rel="icon" href="{{  url_for('static', filename='favicon.ico')  }}" type="image/x-icon" >
-       <link rel='stylesheet' type='text/css' href='/static/base2.css' >
-       <link rel='stylesheet' type='text/css' href='/static/flaskboot.css' />
+       	<link rel='shorcut icon' href="{{  url_for('static', filename='favicon.ico')  }}" type="image/x-icon" >
+       	<link rel="icon" href="{{  url_for('static', filename='favicon.ico')  }}" type="image/x-icon" >
+       	<link rel='stylesheet' type='text/css' href='/static/base2.css' >
+       	<link href="{{ bootstrap_find_resource('css/bootstrap.css', cdn='bootstrap') }}" rel="stylesheet">
         {% endblock style %}
         {% endblock header %}
    </head>

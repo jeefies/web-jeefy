@@ -7,7 +7,7 @@ from flask import make_response as mkresp
 
 from . import main
 from .. import mail
-from ..mail import send_email
+from ..sdmail import send_email
 from .forms import NameForm, LogoutForm, LoginForm, RegisterForm
 from .now import now
 
@@ -109,7 +109,7 @@ def activate(token):
     email = Hexsec.decrypt(token)
     if con.has(email):
         acc = con.get(email)
-        con.add(acc[1][0], [acc[1][1], acc[1][2], email, '', ''])
+        con.add(acc[1][0], [acc[1][1], acc[1][2], email, '', '', ''])
         con.set(email, [acc[1][0]])
         flash('You can login now!')
         return redirect(url_for('.login'))
