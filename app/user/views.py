@@ -20,7 +20,7 @@ def loginerror():
 
 pro = protect(loginerror, conpath)
 
-@user.route('/')
+@user.route('/user')
 @pro
 def index():
     accuser = con.get(get_user())
@@ -29,7 +29,7 @@ def index():
     disc = [disc] if disc.split('\n') == disc else disc.split('\n')
     return render_template('user/index.html', acc=accuser, img=img, self=True, disc=disc)
 
-@user.route('/name/<username>')
+@user.route('/user/<username>')
 def show_one(username):
     try:
         int(username)
@@ -53,11 +53,7 @@ def show_one(username):
         self = False
     return render_template('user/index.html', img=img, disc=disc, self=self, acc=accuser)
 
-@user.route('/account')
-def account():
-    pass
-
-@user.route('/list')
+@user.route('/users/list')
 @permission(16, lambda:redirect(url_for('.index')), conpath)
 def listusers():
     l = '<p>{}</p>'
@@ -68,10 +64,9 @@ def listusers():
             each += l.format(name)
     return turn.format(each)
 
-@user.route('/name/<username>/edit', methods='GET POST'.split())
+@user.route('/user/<username>/acc')
 def edit_profile(username):
-    pass
-
-@user.route('/name/<username>/permission')
-def edit_permission(username):
-    pass
+    if not con.has(username):
+        return redirect(404)
+    else:
+        return redirect('user.acc')
