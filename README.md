@@ -1,4 +1,4 @@
-# web-jeefy
+# web-jeefy va1
 Jeefy
 -----------
 **author: jeefy**  
@@ -6,9 +6,10 @@ Jeefy
 
 This is a web site used flask to develop.  
 It's a easy site based on http server.  
+Add this is another version for the site to work.  
 Use
 ```
-git clone https://github.com/jeefies/jeefies.git
+git clone https://github.com/jeefies/web-jeefy-a1.git
 pip install -r requirements.txt
 python jeefy.py
 ```

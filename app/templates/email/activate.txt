@@ -1,7 +1,0 @@
-Hi User!
-Welcome to Jeefy website.
-You're now ready to create your account, 
-check your info again and then get to the following website to activate your account.
-{{ acturl }}
-Warn: You can change you profile picture on gravatar.com
-We use gravatar.com to generate your profile picture based on your email address

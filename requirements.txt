@@ -4,6 +4,7 @@ flask-wtf
 flask-moment
 flask-mail
 email_validator
+validator
 flask-migrate
 flask-sqlalchemy
 flask-pagedown

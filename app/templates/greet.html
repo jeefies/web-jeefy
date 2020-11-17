@@ -1,18 +1,5 @@
-{% extends 'base.html' %}
-{% import "bootstrap/wtf.html" as wtf%}
+{% extends "base.html" %}
 
-{% block title%}Jeefy - Welcome{% endblock %}
-
-{% block page_header %}
-<h1 class="greeting" >Hi {% if name %}{{  name  }}{% else %}Stranger{% endif %}</h1 >
-{% endblock %}
-
-{% block content %}
-<div>
-	{#<p class='time'>{{  tm  }}</p>#}
-<p class="time">The date is {{ tm['year'] }}.{{ tm['mon'] }}.{{ tm['day'] }} today.</p >
-<p class="time">It seems that it's {{  tm['wday'] }} now.</p >
-<p class='time'>But When your log in , it was {{ tm['hour']  }}:{{ tm['min']  }}:{{ tm['sec'] }}</p>
-</div>
-{# {{  wtf.quick_form(form)  }}#}
+{% block page_content %}
+<h1>Hello User</h1>
 {% endblock %}
